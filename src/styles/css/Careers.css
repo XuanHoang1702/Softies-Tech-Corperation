@@ -1,0 +1,166 @@
+.careers-container {
+    background-color: #f5f5f5;
+    color: black;
+    padding: 40px 100px;
+
+    max-width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+.careers-header {
+  margin-bottom: 40px;
+  max-width: 240px;
+}
+
+.careers-section-number {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.careers-section-title {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.careers-divider {
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+  position: relative;
+  margin-bottom: 64px;
+}
+
+.careers-divider-dot {
+  position: absolute;
+  top: -4px;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.careers-content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .careers-content {
+    flex-direction: row;
+    gap: 48px;
+  }
+}
+
+.careers-image-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.careers-image-container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transform-origin: center center;
+}
+
+.image-One-Career {
+  width: 160px;
+  animation: rotate1 5s linear infinite;
+}
+
+.image-Two-Career {
+  width: 280px;
+  animation: rotate2 5s linear infinite;
+}
+
+@keyframes rotate1 {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes rotate2 {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(-360deg); }
+}
+
+
+@media (min-width: 768px) {
+  .careers-image-container {
+    display: block;
+    flex-shrink: 0;
+    width: 288px;
+  }
+
+  .careers-image-One {
+    width: 288px;
+    height: 288px;
+    object-fit: contain;
+  }
+}
+
+.careers-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .careers-cards {
+    flex-direction: row;
+    gap: 48px;
+    flex-grow: 1;
+  }
+}
+
+.careers-card {
+  max-width: 300px;
+  min-height: 400px; /* hoặc height: 100% nếu container có chiều cao xác định */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+
+.careers-job-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+
+.careers-job-location {
+  font-size: 10px;
+  font-family: monospace;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+
+.careers-job-description {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.careers-apply-btn {
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 4px 12px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.careers-apply-btn:hover {
+  background-color: black;
+  color: white;
+}
+

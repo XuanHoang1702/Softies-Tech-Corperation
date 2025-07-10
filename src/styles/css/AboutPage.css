@@ -1,0 +1,21 @@
+.imageWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.imageWrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlayText {
+  position: absolute;
+  bottom: 50px;
+  left: 50px; /* đổi từ right sang left */
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  font-size: 60px; /* sửa đúng cú pháp và tăng kích thước */
+}

@@ -1,0 +1,19 @@
+.hexagon-one {
+  transform-origin: center center;
+  animation: rotate-clockwise 10s linear infinite;
+}
+
+.hexagon-two {
+  transform-origin: center center;
+  animation: rotate-counterclockwise 10s linear infinite;
+}
+
+@keyframes rotate-clockwise {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes rotate-counterclockwise {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}

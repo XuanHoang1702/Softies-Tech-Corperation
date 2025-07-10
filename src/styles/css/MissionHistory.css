@@ -1,0 +1,94 @@
+.mission-history-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px 100px;
+  background-color: #f5f5f5;
+  font-family: 'Inter', sans-serif;
+  color: #1f2937;
+}
+
+@media (min-width: 640px) {
+  .mission-history-container {
+    padding: 100px;
+  }
+}
+
+.mission-history-header {
+  margin-bottom: 1.5rem;
+}
+
+.mission-history-section-number {
+  font-size: 48px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #0a0a0a;
+  margin-bottom: 0.25rem;
+}
+
+.mission-history-section-title {
+  font-size: 16px;
+  line-height: 16px;
+  color: #0a0a0a;
+  margin-bottom: 0.75rem;
+}
+
+.mission-history-content-box {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .mission-history-content-box {
+    flex-direction: row;
+  }
+}
+
+.mission-history-image-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.mission-history-image-container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transform-origin: center center;
+}
+
+.image-One {
+  width: 200px;
+  animation: rotate1 5s linear infinite;
+}
+
+.image-Two {
+  width: 150px;
+  animation: rotate2 5s linear infinite;
+}
+
+@keyframes rotate1 {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes rotate2 {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(-360deg); }
+}
+
+.mission-history-text-box {
+  flex: 1;
+  font-size: 18px;
+  line-height: 24px;
+  color: #3a3a3a;
+}
+
+.mission-history-text-box p {
+  margin-bottom: 1.5rem;
+}

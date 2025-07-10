@@ -1,0 +1,139 @@
+.information-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px 100px;
+  background-color: #f5f5f5;
+  font-family: 'Inter', sans-serif;
+  color: #1f2937;
+}
+
+@media (min-width: 640px) {
+  .information-container {
+    padding: 100px
+  }
+}
+
+.information-header {
+  margin-bottom: 1.5rem;
+}
+
+.information-section-number {
+  font-size: 48px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #0a0a0a;
+  margin-bottom: 0.25rem;
+}
+
+.information-section-title {
+  font-size: 16px;
+  line-height: 16px;
+  color: #0a0a0a;
+  margin-bottom: 0.75rem;
+}
+
+.information-content-box {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .information-content-box {
+    flex-direction: row;
+  }
+}
+
+.information-image-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.information-image-container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transform-origin: center center;
+}
+
+.image-One {
+  width: 200px;
+  animation: rotate1 5s linear infinite;
+}
+
+.image-Two {
+  width: 140px;
+  animation: rotate2 5s linear infinite;
+}
+.image-Three {
+  width: 140px;
+  animation: rotate1 5s linear infinite;
+}
+
+@keyframes rotate1 {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes rotate2 {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(-360deg); }
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+@media (min-width: 640px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.stat-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  padding: 32px;
+}
+
+.stat-number {
+  font-size: 4rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 16px;
+}
+
+.stat-title {
+  font-size: 1.125rem;
+  font-weight: 900;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.stat-description {
+  font-size: 1rem;
+  color: #374151;
+  max-width: 500px;
+  line-height: 1.4;
+}
+
+.stat-number.gray,
+.stat-title.gray {
+  color: #4B5563;
+}
+
+.stat-description.light-gray {
+  color: #6B7280;
+}
