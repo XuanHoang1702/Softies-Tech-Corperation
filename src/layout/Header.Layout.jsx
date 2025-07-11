@@ -10,7 +10,7 @@ const HeaderLayout = () => {
         <div>
             <header class="site-header">
                 <div class="container">
-                    <h1 class="logo" onClick={handleLogoClick}>🎯 Logo của tôi</h1>
+                    <h1 class="logo" onClick={handleLogoClick}>🎯 Softies</h1>
                         <nav class="main-nav">
                         <a href="/about">About</a>
                         <a href="/technology">Research & Technology</a>
