@@ -35,9 +35,9 @@ const ResearchTechnologySection = () => {
 
     const cards = [
         {
-        number: '01',
-        title: 'Hypersonic Propulsion Systems',
-        text: 'Describe the service and how customers or clients can benefit from it...'
+            number: '01',
+            title: 'Outsource',
+            text: 'We provide high-quality software outsourcing services to help clients save costs, accelerate development, and focus on their core business.'
         },
         {
         number: '02',
