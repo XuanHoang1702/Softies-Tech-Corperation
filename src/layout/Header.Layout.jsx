@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import '../styles/css/Header.css';
+import Logo from '../styles/images/Logo-STC.png';
 
 const HeaderLayout = () => {
     const navigate = useNavigate();
@@ -8,10 +9,10 @@ const HeaderLayout = () => {
     };
     return (
         <div>
-            <header class="site-header">
-                <div class="container">
-                    <h1 class="logo" onClick={handleLogoClick}>🎯 Softies</h1>
-                        <nav class="main-nav">
+            <header className="site-header">
+                <div className="container">
+                    <h1 className="logo" onClick={handleLogoClick}><img className="logo-img" src={Logo}/> Softies</h1>
+                        <nav className="main-nav">
                         <a href="/about">About</a>
                         <a href="/technology">Research & Technology</a>
                         <a className="contact" href="#k">Contact</a>
