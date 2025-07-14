@@ -41,7 +41,7 @@ const ResearchTechnologySection = () => {
         },
         {
             number: '02',
-            title: 'Automation tool',
+            title: 'Automation',
             text: 'Describe the service and how customers or clients can benefit from it...'
         },
         {
