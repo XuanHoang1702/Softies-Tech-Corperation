@@ -11,6 +11,8 @@ phases:
       - npm run build
   post_build:
     commands:
+      # Sync everything except index.html
+      - aws s3 sync build/ s3://stc-dynamic-website/ --exclude "index.html" --delete
       # Upload index.html với Content-Type chính xác
       - aws s3 cp build/index.html s3://stc-dynamic-website/index.html --content-type text/html
 artifacts:
