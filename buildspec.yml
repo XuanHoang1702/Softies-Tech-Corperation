@@ -14,7 +14,7 @@ phases:
       # Upload index.html với Content-Type chính xác
       - aws s3 cp build/index.html s3://stc-dynamic-website/index.html --content-type text/html
       # Upload phần còn lại
-      - aws s3 sync build/ s3://stc-dynamic-website/ --exclude "index.html" --delete
+      - aws s3 sync s3://stc-dynamic-website/ --exclude "index.html" --delete
 artifacts:
   base-directory: build
   files:
