@@ -42,7 +42,7 @@ const ResearchTechnologySection = () => {
         {
             number: '02',
             title: 'Automation tool',
-            text: 'Describe the service and how customers or clients can benefit from it...'
+            text: 'The automation tool helps businesses streamline repetitive tasks, saving time and reducing errors. Customers can easily set up workflows for actions like sending emails, managing data, or handling routine processes without manual intervention. This tool boosts productivity, optimizes operational costs, and provides a significant competitive advantage.'
         },
         {
         number: '03',
