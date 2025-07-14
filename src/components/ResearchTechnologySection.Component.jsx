@@ -40,9 +40,9 @@ const ResearchTechnologySection = () => {
             text: 'We provide high-quality software outsourcing services to help clients save costs, accelerate development, and focus on their core business.'
         },
         {
-        number: '02',
-        title: 'Autonomous Navigation for Spacecraft',
-        text: 'Describe the service and how customers or clients can benefit from it...'
+            number: '02',
+            title: 'Automation tool',
+            text: 'Describe the service and how customers or clients can benefit from it...'
         },
         {
         number: '03',
