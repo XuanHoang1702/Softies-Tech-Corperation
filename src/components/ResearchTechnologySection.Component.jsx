@@ -45,9 +45,9 @@ const ResearchTechnologySection = () => {
             text: 'The automation tool helps businesses streamline repetitive tasks, saving time and reducing errors. Customers can easily set up workflows for actions like sending emails, managing data, or handling routine processes without manual intervention. This tool boosts productivity, optimizes operational costs, and provides a significant competitive advantage.'
         },
         {
-        number: '03',
-        title: 'Advanced Materials for Defense Applications',
-        text: 'Describe the service and how customers or clients can benefit from it...'
+            number: '03',
+            title: 'Advance',
+            text: 'Describe the service and how customers or clients can benefit from it...'
         }
     ];
 
